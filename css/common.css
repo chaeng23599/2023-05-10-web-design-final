@@ -31,12 +31,37 @@ body{ color: #222328; background-color: #fff; font: size 14px;line-height: 1.5;}
 .slide img{ display: block; width: 100%;}
 
 /*contents */
-.contents{ height: 200px; padding: 10px 0; display: flex; gap: 21px;}
+.contents{ 
+    height: 200px; 
+    display: flex; 
+    gap: 21px;
+    padding: 10px 0;} 
 
 .tab{ flex: 1;}
-.tab_title{ display: flex; gap: 4px; position: relative;}
-.tab_title::after{ position: absolute; content: ''; bottom: 0; width: 100%; height: 3px; background-color: tomato;} 
-.tab_title h2{ height: 50px; background-color: #ddd; text-align: center; font-size: 14px; font-weight: normal; flex: 1; line-height: 50px;cursor: pointer;}
+.tab_title{ 
+    position: relative;  
+    display: flex; 
+    gap: 4px; 
+}
+.tab_title::after{
+     position: absolute; 
+     content: ''; 
+     bottom: 0; 
+     width: 100%; 
+     height: 3px; 
+     background-color: tomato;
+} 
+
+.tab_title h2{ 
+    height: 50px; 
+    line-height: 50px;
+    background-color: #ddd;
+    text-align: center; 
+    font-size: 14px; 
+    font-weight: normal; 
+    flex: 1; 
+    cursor: pointer;
+}
 .tab_title h2.on { background-color: tomato; color: #fff;}
 
 .tab_contents{ height: 130px; position: relative;}
@@ -44,8 +69,17 @@ body{ color: #222328; background-color: #fff; font: size 14px;line-height: 1.5;}
 .tab_contents ul.notice{ width: 386px;}
 .tab_contents ul.notice li a{ display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 4px 0;}
 .tab_contents ul.notice li a:hover{ text-decoration: underline;}
-.tab_contents ul.gallery {display: none; gap: 10px; height: 130px;}
-.tab_contents ul.gallery li{ height: 100%; width: 32%; float: left; margin-right: 2%;}
+.tab_contents ul.gallery {
+    display: none; 
+    gap: 10px; 
+    height: 130px;
+}
+.tab_contents ul.gallery li{ 
+    height: 100%; 
+    width: 32%; 
+    float: left; 
+    margin-right: 2%;
+}
 .tab_contents ul.gallery li:last-child{margin-right: 0;}
 .tab_contents ul.gallery li img{ width: 100%; display: block; height: 100%; object-fit: cover;}
 
@@ -53,15 +87,47 @@ body{ color: #222328; background-color: #fff; font: size 14px;line-height: 1.5;}
 .banner img{ width: 100%; height: 100%; display: block; object-fit: cover;}
 
 .link{flex: 1;}
-.link ul{ display: grid; grid-template-columns: repeat(2,1fr); gap: 10px;}
-.link ul li a{ background-color: #ddd; display: block; height: 85px; border-radius: 5px; text-align: center; line-height: 85px;}
-.link ul li a:hover{background-color: #666; color: #fff;}
+.link ul{ 
+    display: grid; 
+    grid-template-columns: repeat(2,1fr); 
+    gap: 10px;}
+
+.link ul li a{ 
+    background-color: #ddd; 
+    display: block; 
+    height: 85px; 
+    border-radius: 5px; 
+    text-align: center; 
+    line-height: 85px;}
+
+.link ul li a:hover{
+    background-color: #666;
+     color: #fff;}
 
 /* footer */
-.footer{ height: 100px; background-color: #ddd; display: flex; align-items: center; justify-content: space-between; padding: 0 30px;}
-.sns{display: flex; gap: 10px;}
-.sns a{ display: block; background-color: #fff; padding: 6px 12px; border-radius: 20px; font-size: 14px;}
-.sns a:hover{background-color: #666; color: #fff;}
+.footer{ 
+    height: 100px; 
+    background-color: #ddd; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 30px;}
+
+.sns{
+    display: flex; 
+    gap: 10px;
+}
+.sns a{ 
+    display: block; 
+    background-color: #fff; 
+    padding: 6px 12px; 
+    border-radius: 20px; 
+    font-size: 14px;
+}
+.sns a:hover{
+    background-color: #666; 
+    color: #fff;
+}
 
 /* modal */
 #modal {
@@ -76,9 +142,26 @@ body{ color: #222328; background-color: #fff; font: size 14px;line-height: 1.5;}
     transform: translate(-50%,-50%);
     display: none;
 }
+
 #modal.active{
     display: block;
 }
-#modal h2{ font-size: 30px; margin-bottom: 30px;}
+
+#modal h2{ 
+    font-size: 30px; 
+    margin-bottom: 30px;
+}
+
 #modal p{}
-#modal .close{width: 70px; height:36px; background-color: #ccc; line-height: 36px; display: block; text-align: center; position: absolute; bottom: 20px; right: 40px;}
+
+#modal .close{
+    width: 70px; 
+    height:36px; 
+    background-color: #ccc; 
+    line-height: 36px; 
+    display: block; 
+    text-align: center; 
+    position: absolute; 
+    bottom: 20px; 
+    right: 40px;
+}
